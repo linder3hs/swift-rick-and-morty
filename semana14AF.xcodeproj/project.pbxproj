@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DD95D6E0EFA636E5F268FBB /* Pods_semana14AF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6559A8CCB6F62786550C55 /* Pods_semana14AF.framework */; };
 		B032FAE826724A8200756683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032FAE726724A8200756683 /* AppDelegate.swift */; };
 		B032FAEA26724A8200756683 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032FAE926724A8200756683 /* SceneDelegate.swift */; };
 		B032FAEC26724A8200756683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032FAEB26724A8200756683 /* ViewController.swift */; };
 		B032FAEF26724A8200756683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B032FAED26724A8200756683 /* Main.storyboard */; };
 		B032FAF126724A8400756683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B032FAF026724A8400756683 /* Assets.xcassets */; };
 		B032FAF426724A8400756683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B032FAF226724A8400756683 /* LaunchScreen.storyboard */; };
+		B032FB0326724D4C00756683 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032FB0226724D4C00756683 /* Response.swift */; };
+		B032FB082672520C00756683 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B032FB072672520C00756683 /* CharacterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F6559A8CCB6F62786550C55 /* Pods_semana14AF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_semana14AF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7CA765534FDBBAD57D4419 /* Pods-semana14AF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-semana14AF.debug.xcconfig"; path = "Target Support Files/Pods-semana14AF/Pods-semana14AF.debug.xcconfig"; sourceTree = "<group>"; };
 		B032FAE426724A8200756683 /* semana14AF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = semana14AF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B032FAE726724A8200756683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B032FAE926724A8200756683 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		B032FAF026724A8400756683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B032FAF326724A8400756683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B032FAF526724A8400756683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B032FB0226724D4C00756683 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		B032FB072672520C00756683 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		C98816A77078879172E5E553 /* Pods-semana14AF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-semana14AF.release.xcconfig"; path = "Target Support Files/Pods-semana14AF/Pods-semana14AF.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD95D6E0EFA636E5F268FBB /* Pods_semana14AF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29B485D315447397479B8DCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F6559A8CCB6F62786550C55 /* Pods_semana14AF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1EF7BB9A2746376E7D4CB09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A7CA765534FDBBAD57D4419 /* Pods-semana14AF.debug.xcconfig */,
+				C98816A77078879172E5E553 /* Pods-semana14AF.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B032FADB26724A8200756683 = {
 			isa = PBXGroup;
 			children = (
 				B032FAE626724A8200756683 /* semana14AF */,
 				B032FAE526724A8200756683 /* Products */,
+				A1EF7BB9A2746376E7D4CB09 /* Pods */,
+				29B485D315447397479B8DCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,7 @@
 		B032FAE626724A8200756683 /* semana14AF */ = {
 			isa = PBXGroup;
 			children = (
+				B032FB0126724D3F00756683 /* Model */,
 				B032FAE726724A8200756683 /* AppDelegate.swift */,
 				B032FAE926724A8200756683 /* SceneDelegate.swift */,
 				B032FAEB26724A8200756683 /* ViewController.swift */,
@@ -63,8 +92,17 @@
 				B032FAF026724A8400756683 /* Assets.xcassets */,
 				B032FAF226724A8400756683 /* LaunchScreen.storyboard */,
 				B032FAF526724A8400756683 /* Info.plist */,
+				B032FB072672520C00756683 /* CharacterCollectionViewCell.swift */,
 			);
 			path = semana14AF;
+			sourceTree = "<group>";
+		};
+		B032FB0126724D3F00756683 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B032FB0226724D4C00756683 /* Response.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B032FAF826724A8400756683 /* Build configuration list for PBXNativeTarget "semana14AF" */;
 			buildPhases = (
+				7374F92EEB96EA79B694992A /* [CP] Check Pods Manifest.lock */,
 				B032FAE026724A8200756683 /* Sources */,
 				B032FAE126724A8200756683 /* Frameworks */,
 				B032FAE226724A8200756683 /* Resources */,
+				AEF473876F19DAD796AF7B0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +172,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7374F92EEB96EA79B694992A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-semana14AF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF473876F19DAD796AF7B0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-semana14AF/Pods-semana14AF-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-semana14AF/Pods-semana14AF-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-semana14AF/Pods-semana14AF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B032FAE026724A8200756683 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B032FB082672520C00756683 /* CharacterCollectionViewCell.swift in Sources */,
 				B032FAEC26724A8200756683 /* ViewController.swift in Sources */,
+				B032FB0326724D4C00756683 /* Response.swift in Sources */,
 				B032FAE826724A8200756683 /* AppDelegate.swift in Sources */,
 				B032FAEA26724A8200756683 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +367,7 @@
 		};
 		B032FAF926724A8400756683 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7CA765534FDBBAD57D4419 /* Pods-semana14AF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +387,7 @@
 		};
 		B032FAFA26724A8400756683 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98816A77078879172E5E553 /* Pods-semana14AF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
